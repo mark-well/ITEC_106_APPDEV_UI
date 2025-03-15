@@ -1,3 +1,10 @@
+
+:root {
+    --color-blue: #99DDF5;
+    --color-green: #54B244;
+    --color-white: #F6F6F6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,5 +14,5 @@
 nav {
     width: 100dvw;
     height: 4rem;
-    background-color: #52B244;
+    background-color: var(--color-white);
 }
