@@ -11,23 +11,30 @@
   <body class="inter-regular">
     <div class="login-container">
         <!-- Logo -->
-        <div class="logo-wrapper">
-            <div class="univ-logos">
-                <img src="assets/images/lspu.png" alt="lspu logo" width="80" height="80">
-                <img src="assets/images/ccs_logo.png" alt="ccs logo" width="80" height="80">
+        <div class="logo-wrapper selectDisable">
+            <div class="gradient"></div>
+            <div class="logos">
+                <div class="univ-logos">
+                    <img draggable="false" src="assets/images/lspu.png" alt="lspu logo" width="80" height="80">
+                    <img draggable="false" src="assets/images/ccs_logo.png" alt="ccs logo" width="80" height="80">
+                </div>
+                <h1 class="logo"><span class="dept">CCS</span><br><span class="name">OPTISCHED</span></h1>
             </div>
-            <h1 class="logo"><span class="dept">CCS</span><br><span class="name">OPTISCHED</span></h1>
         </div>
 
         <!-- Login Input -->
         <div class="login-wrapper">
             <h2>Welcome Back!</h2>
-            <div class="inputs">
-                <div class="email-placeholder">Email</div>
-                <input type="text" name="email" id="email">
-                <div class="passoword-placeholder">Password</div>
-                <input type="password" name="password" id="password">
-                <div class="rememberme-wrapper">
+            <div class="inputs inter-regular">
+                <div class="main-input-wrapper">
+                    <div class="email-placeholder">Email</div>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="main-input-wrapper">
+                    <div class="passoword-placeholder">Password</div>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="rememberme-wrapper selectDisable">
                     <input type="checkbox" name="rememberme" id="rememberme">
                     <label for="rememberme">Remember me</label>
                 </div>
@@ -37,7 +44,7 @@
     </div>
 
     <!-- Footer -->
-     <div class="footer">
+     <footer>
         <div class="copyright-wrapper">
             <div class="copyright">© 2025 LSPU Siniloan Campus</div>
             <div class="links">
@@ -48,6 +55,6 @@
                 <a href="#">Contact</a>
             </div>
         </div>
-     </div>
+     </footer>
   </body>
 </html>
