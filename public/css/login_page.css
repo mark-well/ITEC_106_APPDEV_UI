@@ -1,13 +1,116 @@
+body {
+    background-image: url("/assets/images/slides/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .login-container {
     width: 930px;
     height: 517px;
     display: flex;
+    margin: 5rem auto;
+    color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .login-container > .logo-wrapper {
     height: 100%;
+    min-width: 23.75rem;
+    flex-grow: 2;
+    background-image: url("/assets/images/lspu_thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 14% 0%;
+    position: relative;
+    border-radius: 1rem 0 0 1rem;
 }
 
+/* Gradient */
+.login-container > .logo-wrapper > .gradient {
+    background-image: linear-gradient(0deg, rgba(127, 19, 21, 0.8) 0%, rgba(221, 126, 40, 0.8) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.login-container > .logo-wrapper > .logos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.login-container > .logo-wrapper > .logos > .univ-logos {
+    display: flex;
+    column-gap: 1.12rem;
+}
+
+.login-container > .logo-wrapper > .logos > .logo > .dept {
+    font-size: 4rem;
+}
+
+.login-container > .logo-wrapper > .logos > .logo > .name {
+    font-size: 1.5rem;
+}
+
+/* LOGIN INPUT */
 .login-container > .login-wrapper {
     height: 100%;
+    min-width: 34.375rem;
+    flex-grow: 2;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container > .login-wrapper > h2 {
+    font-size: 2rem;
+}
+.login-container > .login-wrapper > .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.login-container > .login-wrapper > .inputs > .main-input-wrapper {
+    width: 22.5rem;
+    height: auto;
+}
+.login-container > .login-wrapper > .inputs > .main-input-wrapper > div {
+    font-size: 1.25rem;
+}
+.login-container > .login-wrapper > .inputs > .main-input-wrapper > input {
+    width: 100%;
+    height: 2rem;
+    padding: 0 0.5rem;
+    color: var(--dark);
+    outline: none;
+}
+
+.login-button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+    transition: background-color 120ms;
+}
+
+.login-button:hover {
+    background-color: var(--accent);
 }
