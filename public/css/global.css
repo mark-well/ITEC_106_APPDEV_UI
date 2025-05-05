@@ -40,8 +40,57 @@
     font-style: normal;
 }
 
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.selectEnable { 
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+}
+
+footer {
+    width: 100%;
+    min-height: 4.68rem;
+    background-color: var(--primary);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .copyright-wrapper {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.1rem;
+}
+
+footer > .copyright-wrapper > .links {
+    display: flex;
+    column-gap: 0.3rem;
+}
+
+footer > .copyright-wrapper > .links > a {
+    text-decoration: none;
+    color: var(--white);
 }
