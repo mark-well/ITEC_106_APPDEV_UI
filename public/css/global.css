@@ -166,6 +166,11 @@ main {
     transition: background-color 120ms;
 }
 
+.sidebar > a.active-page {
+    background-color: var(--secondary);
+    border-left: 4px solid var(--accent);
+}
+
 .sidebar > a:hover {
     background-color: #555353;
 }
