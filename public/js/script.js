@@ -21,3 +21,7 @@ function changeBackgroundImage() {
         currentImage = 0;
     }
 }
+
+function login() {
+    location.href = "/dashboard.html";
+}
