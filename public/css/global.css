@@ -187,7 +187,7 @@ main {
 main > .body-content {
     height: 100%;
     flex-grow: 2;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 footer {
