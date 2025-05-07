@@ -1,0 +1,18 @@
+
+main > .body-content .datetime-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--soft-white);
+    min-height: 4.375rem;
+    width: 100%;
+    color: var(--dark);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, calc(1 / 15));
+}
+
+main > .body-content .datetime-wrapper .datetime {
+    display: flex;
+    flex-direction: column;
+}
